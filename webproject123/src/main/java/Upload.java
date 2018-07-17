@@ -29,9 +29,8 @@ public class Upload extends HttpServlet {
 	{
 	
 	  //Build the basicAWScredentials object with credentials of aws account 
-	  BasicAWSCredentials basicAWSCredentials = new BasicAWSCredentials("AKIAIRFF35MKAANGP56Q", "6hjM5t0DoJcXfnjm6oW0akBsPE1M2VHF3CKGwMau");
+	 	
 		
-		 /*
 		//Get the credentials of aws account
     	AWSCredentials credentials = null;
         try {
@@ -45,7 +44,7 @@ public class Upload extends HttpServlet {
                     "location (C:\\Users\\Kittu\\.aws\\credentials), and is in valid format.",
                     e);
         }
-		*/
+		
 		 
        //Creating aws s3 object using the credentials object and region name
         AmazonS3 s3 = AmazonS3ClientBuilder.standard()
